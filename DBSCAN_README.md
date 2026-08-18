@@ -1,23 +1,47 @@
-DBSCAN Clustering
+# DBSCAN Clustering
 
-This notebook demonstrates the implementation of DBSCAN (Density-Based Spatial Clustering of Applications with Noise) using Python and Scikit-learn.
+Implementation of **DBSCAN (Density-Based Spatial Clustering of Applications with Noise)** using Scikit-learn.
 
-What is DBSCAN?
+## 🔬 Key Concepts
 
-DBSCAN is a density-based clustering algorithm that groups closely packed data points together and identifies points that do not belong to any cluster as noise or outliers.
+* Density-based clustering
+* Core points
+* Border points
+* Noise / outliers
+* `eps`
+* `min_samples`
+* Distance-based neighborhoods
+* Feature scaling
 
-Topics Covered
-Data preprocessing
-Feature scaling
-DBSCAN clustering
-eps
-min_samples
-Outlier detection
-Cluster visualization
-Libraries Used
-NumPy
-Pandas
-Matplotlib
-Scikit-learn
+## 🔄 Workflow
 
-The complete implementation and results are available in the accompanying Jupyter Notebook.
+```text
+Data Preprocessing
+       ↓
+Feature Scaling
+       ↓
+Set eps & min_samples
+       ↓
+Identify Core/Border/Noise Points
+       ↓
+Cluster Formation
+       ↓
+Visualization
+```
+
+DBSCAN does not require the number of clusters to be specified beforehand and can detect **noise and irregularly shaped clusters**.
+
+## 🛠️ Technologies
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Scikit-learn
+* Jupyter Notebook
+
+## 🎯 Learning Outcome
+
+Practical understanding of **density-based clustering, parameter selection, noise detection, and cluster formation**.
+
+**Notebook:** `DBSCAN Clustering.ipynb`
