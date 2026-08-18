@@ -1,162 +1,98 @@
-Unsupervised Machine Learning Algorithms
+# Unsupervised Machine Learning Algorithms
 
-A collection of practical implementations of popular Unsupervised Machine Learning algorithms using Python and Scikit-learn.
+A collection of practical implementations of popular **Unsupervised Machine Learning clustering algorithms** using Python, Jupyter Notebook, and Scikit-learn.
 
-This project focuses on understanding how clustering algorithms work, how data is prepared before clustering, and how different algorithms identify groups and patterns within unlabeled data.
+This project focuses on understanding how different clustering techniques work, how data is prepared before applying them, and how these algorithms can discover patterns and groups in unlabeled data.
 
-📌 Algorithms Covered
-Algorithm	Type	Main Idea
-K-Means	Centroid-based clustering	Groups data points around cluster centroids
-Hierarchical Clustering	Hierarchical clustering	Builds a hierarchy of nested clusters
-DBSCAN	Density-based clustering	Forms clusters based on data-point density and detects noise
-📂 Project Structure
+## 📌 Algorithms Covered
+
+### 1. K-Means Clustering
+
+K-Means is a **centroid-based clustering algorithm** that divides data into a predefined number of clusters.
+
+It works by assigning data points to the nearest cluster centroid and repeatedly updating the centroids until the clusters stabilize.
+
+### 2. Hierarchical Clustering
+
+Hierarchical Clustering builds a hierarchy of clusters using a **bottom-up (agglomerative) approach**.
+
+A **dendrogram** can be used to visualize the hierarchy and understand how individual data points are progressively merged into larger clusters.
+
+### 3. DBSCAN
+
+DBSCAN (**Density-Based Spatial Clustering of Applications with Noise**) is a density-based clustering algorithm.
+
+It groups closely packed data points together and can identify points that do not belong to any cluster as **noise or outliers**.
+
+## 📂 Project Structure
+
+```text
 Unsupervised ML Algorithm/
 │
 ├── DBSCAN Clustering.ipynb
 ├── DBSCAN_README.md
 │
-├── Hierarichal Clustering Implementation.ipynb
+├── Hierarchical Clustering Implementation.ipynb
 ├── Hierarchical_README.md
 │
 ├── K Means Clustering Implementation.ipynb
 ├── KMeans_README.md
 │
 └── README.md
+```
 
-🧠 What is Unsupervised Learning?
+Each Jupyter Notebook contains the practical implementation of the corresponding clustering algorithm, while the individual README files provide a brief explanation of the concepts and implementation.
 
-Unsupervised Machine Learning is a type of machine learning where the model works with unlabeled data.
+## 🛠️ Technologies & Libraries
 
-Instead of being given the correct output for each data point, the algorithm tries to discover hidden patterns, structures, or groups within the data.
+* **Python**
+* **Jupyter Notebook**
+* **NumPy**
+* **Pandas**
+* **Matplotlib**
+* **Scikit-learn**
 
-Clustering is one of the most common applications of unsupervised learning.
+## 🎯 Topics Covered
 
-For example, given a dataset containing customer information, a clustering algorithm could group customers with similar characteristics without being explicitly told which customers belong together.
+* Unsupervised Machine Learning
+* Data Preprocessing
+* Feature Scaling
+* K-Means Clustering
+* Hierarchical Clustering
+* Agglomerative Clustering
+* Dendrograms
+* DBSCAN
+* Cluster Formation
+* Noise and Outlier Detection
+* Cluster Visualization
 
-🔬 Algorithms Implemented
-1. K-Means Clustering
+## 🔄 General Workflow
 
-K-Means divides data into a predefined number of clusters.
+The notebooks follow a general machine learning workflow:
 
-The algorithm works by:
-
-Choosing the number of clusters (K)
-Initializing cluster centroids
-Assigning data points to the nearest centroid
-Updating the centroids
-Repeating the process until the clusters stabilize
-
-Notebook: K Means Clustering Implementation.ipynb
-
-View K-Means README →
-
-2. Hierarchical Clustering
-
-Hierarchical Clustering creates a hierarchy of clusters.
-
-This project focuses on Agglomerative Clustering, where individual data points are gradually merged into larger clusters.
-
-A dendrogram can be used to visualize the hierarchy and help understand how clusters are formed.
-
-Notebook: Hierarichal Clustering Implementation.ipynb
-
-View Hierarchical Clustering README →
-
-3. DBSCAN
-
-DBSCAN stands for Density-Based Spatial Clustering of Applications with Noise.
-
-Unlike K-Means, DBSCAN does not require the number of clusters to be specified beforehand.
-
-It groups together points that are closely packed and can identify points that do not belong to any cluster as noise/outliers.
-
-Important parameters include:
-
-eps
-min_samples
-
-Notebook: DBSCAN Clustering.ipynb
-
-View DBSCAN README →
-
-⚙️ Technologies & Libraries
-
-The project uses:
-
-Python
-Jupyter Notebook
-NumPy
-Pandas
-Matplotlib
-Scikit-learn
-🔄 General Machine Learning Workflow
-
-The notebooks follow the general workflow used when applying clustering algorithms:
-
-Raw Data
-   ↓
-Data Exploration
-   ↓
-Data Preprocessing
-   ↓
+```text
+Data
+  ↓
+Data Exploration & Preprocessing
+  ↓
 Feature Scaling
-   ↓
+  ↓
 Apply Clustering Algorithm
-   ↓
-Analyze Clusters
-   ↓
+  ↓
+Analyze Cluster Assignments
+  ↓
 Visualize Results
+```
 
-Feature scaling is particularly important for many clustering algorithms because differences in feature magnitudes can affect distance calculations.
+## 💡 Key Learning
 
-📊 K-Means vs Hierarchical vs DBSCAN
-Feature	K-Means	Hierarchical	DBSCAN
-Number of clusters required beforehand	Yes	Not necessarily	No
-Based on	Centroids	Hierarchy	Density
-Detects noise/outliers	❌	Limited	✅
-Can identify non-spherical clusters	Limited	Better	✅
-Uses distance	✅	✅	✅
-Dendrogram	❌	✅	❌
-🎯 Learning Objectives
+Through this project, I explored how different clustering algorithms approach the problem of grouping unlabeled data.
 
-Through this project, I explored:
+* **K-Means** works well when the number of clusters is known and clusters are relatively well-defined.
+* **Hierarchical Clustering** helps understand the relationships and hierarchy between data points.
+* **DBSCAN** is useful for density-based clustering and identifying noise or outliers.
 
-The concept of Unsupervised Learning
-Different types of clustering algorithms
-Data preprocessing for clustering
-Feature scaling
-K-Means clustering
-Agglomerative/Hierarchical clustering
-Dendrograms
-DBSCAN clustering
-Cluster visualization
-Outlier/noise detection
-Important clustering parameters
-💡 Key Takeaway
+## 📚 Purpose
 
-Different clustering algorithms are suitable for different types of datasets.
-
-K-Means is simple and effective when the number of clusters is known and the clusters have a suitable shape.
-
-Hierarchical Clustering is useful when we want to understand the relationships and hierarchy between groups.
-
-DBSCAN is particularly useful when clusters have irregular shapes or when detecting noise and outliers is important.
-
-🚀 Future Improvements
-
-Possible improvements to this project include:
-
-Adding more clustering datasets
-Comparing clustering algorithms on the same dataset
-Implementing additional clustering evaluation metrics
-Exploring Silhouette Score
-Experimenting with different hyperparameters
-Adding more visualizations
-Comparing the effect of different feature-scaling techniques
-👩‍💻 Author
-
-Aakriti Kandpal
-
-B.Tech CSE — Artificial Intelligence & Machine Learning
-
-This repository is part of my practical learning journey in Machine Learning and Artificial Intelligence.
+This project was created as part of my **practical learning journey in Machine Learning and Artificial Intelligence**.
+The goal is to build a strong understanding of fundamental unsupervised learning techniques by implementing them practically rather than only studying their theory.
