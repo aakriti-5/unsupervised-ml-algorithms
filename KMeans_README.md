@@ -1,21 +1,44 @@
+# K-Means Clustering
+
+Implementation of **K-Means Clustering**, a centroid-based unsupervised learning algorithm that partitions data into `K` clusters based on feature similarity and distance.
+
+## 🔬 Key Concepts
+
+* Centroid-based clustering
+* Euclidean distance
+* Cluster assignment
+* Centroid optimization
+* Inertia / WCSS
+* Feature scaling
+* `n_clusters`
+
+## 🔄 Workflow
+
+```text
+Data Preprocessing
+       ↓
+Feature Scaling
+       ↓
 K-Means Clustering
+       ↓
+Cluster Assignment
+       ↓
+Visualization
+```
 
-This notebook demonstrates the implementation of the K-Means Clustering algorithm using Python and Scikit-learn.
+The **Elbow Method** can be used to determine an appropriate value of `K` by analyzing the Within-Cluster Sum of Squares (WCSS).
 
-What is K-Means?
+## 🛠️ Technologies
 
-K-Means is an unsupervised learning algorithm that groups similar data points into a predefined number of clusters.
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Scikit-learn
+* Jupyter Notebook
 
-Topics Covered
-Data preprocessing
-Feature scaling
-K-Means clustering
-Selecting the number of clusters
-Cluster visualization
-Libraries Used
-NumPy
-Pandas
-Matplotlib
-Scikit-learn
+## 🎯 Learning Outcome
 
-The complete implementation and results are available in the accompanying Jupyter Notebook.
+Practical understanding of **centroid-based clustering, feature scaling, cluster formation, and cluster visualization**.
+
+**Notebook:** `K Means Clustering Implementation.ipynb`
