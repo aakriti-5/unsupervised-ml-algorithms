@@ -1,22 +1,45 @@
-Hierarchical Clustering
+# Hierarchical Clustering
 
-This notebook demonstrates Hierarchical Clustering using Python and Scikit-learn.
+Implementation of **Hierarchical Clustering** using the **Agglomerative Clustering** approach in Scikit-learn.
 
-What is Hierarchical Clustering?
+## 🔬 Key Concepts
 
-Hierarchical Clustering is an unsupervised learning technique that builds a hierarchy of clusters. In this implementation, Agglomerative Clustering is used.
+* Agglomerative clustering
+* Hierarchical cluster formation
+* Dendrogram
+* Distance metrics
+* Linkage criteria
+* Ward linkage
+* Feature scaling
+* `n_clusters`
 
-Topics Covered
-Data preprocessing
-Feature scaling
-Dendrogram
+## 🔄 Workflow
+
+```text
+Data Preprocessing
+       ↓
+Feature Scaling
+       ↓
+Dendrogram Analysis
+       ↓
 Agglomerative Clustering
-Cluster visualization
-Libraries Used
-NumPy
-Pandas
-Matplotlib
-Scikit-learn
+       ↓
+Cluster Visualization
+```
 
-The complete implementation and results are available in the accompanying Jupyter Notebook.
+The **dendrogram** provides a visual representation of the hierarchy and helps analyze potential cluster boundaries.
 
+## 🛠️ Technologies
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Scikit-learn
+* Jupyter Notebook
+
+## 🎯 Learning Outcome
+
+Practical understanding of **agglomerative clustering, linkage methods, dendrograms, and hierarchical cluster formation**.
+
+**Notebook:** `Hierarchical Clustering Implementation.ipynb`
